@@ -83,54 +83,54 @@
                 <div class="position-sticky pt-3">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link {{ request()->routeIs('admin.cms.customers.*') ? 'active' : '' }}" 
-                               href="{{ route('admin.cms.customers.index') }}">
+                            <a class="nav-link {{ request()->routeIs('admin.MasterData.customers.*') ? 'active' : '' }}" 
+                               href="{{ route('admin.MasterData.customers.index') }}">
                                 <i class="fas fa-users"></i> Customers
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ request()->routeIs('admin.cms.DeviceRepair.*') ? 'active' : '' }}" 
-                               href="{{ route('admin.cms.DeviceRepair.index') }}">
+                            <a class="nav-link {{ request()->routeIs('admin.MasterData.DeviceRepair.*') ? 'active' : '' }}" 
+                               href="{{ route('admin.MasterData.DeviceRepair.index') }}">
                                 <i class="fas fa-tools"></i> Device Repair
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ request()->routeIs('admin.cms.Status.*') ? 'active' : '' }}" 
-                               href="{{ route('admin.cms.Status.index') }}">
+                            <a class="nav-link {{ request()->routeIs('admin.MasterData.Status.*') ? 'active' : '' }}" 
+                               href="{{ route('admin.MasterData.Status.index') }}">
                                 <i class="fas fa-info-circle"></i> Status
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ request()->routeIs('admin.cms.Nota.*') ? 'active' : '' }}" 
-                               href="{{ route('admin.cms.Nota.index') }}">
+                            <a class="nav-link {{ request()->routeIs('admin.MasterData.Nota.*') ? 'active' : '' }}" 
+                               href="{{ route('admin.MasterData.Nota.index') }}">
                                 <i class="fas fa-receipt"></i> Nota
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle {{ request()->routeIs('admin.cms.Report.*') ? 'active' : '' }}" 
+                            <a class="nav-link dropdown-toggle {{ request()->routeIs('admin.MasterData.Report.*') ? 'active' : '' }}" 
                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-chart-bar"></i> Laporan & Monitoring
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{ route('admin.cms.Report.index') }}">
+                                <li><a class="dropdown-item" href="{{ route('admin.MasterData.Report.index') }}">
                                     <i class="fas fa-tachometer-alt"></i> Dashboard Laporan
                                 </a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.cms.Report.daily') }}">
+                                <li><a class="dropdown-item" href="{{ route('admin.MasterData.Report.daily') }}">
                                     <i class="fas fa-calendar-day"></i> Laporan Harian
                                 </a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.cms.Report.weekly') }}">
+                                <li><a class="dropdown-item" href="{{ route('admin.MasterData.Report.weekly') }}">
                                     <i class="fas fa-calendar-week"></i> Laporan Mingguan
                                 </a></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.cms.Report.monthly') }}">
+                                <li><a class="dropdown-item" href="{{ route('admin.MasterData.Report.monthly') }}">
                                     <i class="fas fa-calendar-alt"></i> Laporan Bulanan
                                 </a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.cms.Report.brand') }}">
+                                <li><a class="dropdown-item" href="{{ route('admin.MasterData.Report.brand') }}">
                                     <i class="fas fa-mobile-alt"></i> Laporan per Brand
                                 </a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="{{ route('admin.cms.Report.history') }}">
+                                <li><a class="dropdown-item" href="{{ route('admin.MasterData.Report.history') }}">
                                     <i class="fas fa-history"></i> Riwayat Semua Transaksi
                                 </a></li>
                             </ul>

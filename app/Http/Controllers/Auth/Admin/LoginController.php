@@ -28,7 +28,7 @@ class LoginController extends Controller
         if(Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('/admin/cms/pelanggan');
+        return redirect()->intended('/admin/MasterData/customers');
         }
 
         return back()->with('error', 'Username atau password salah');

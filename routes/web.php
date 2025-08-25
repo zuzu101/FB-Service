@@ -3,20 +3,12 @@
 use App\Http\Controllers\Auth\Admin\LoginController;
 use App\Http\Controllers\Front\HomeController as FrontHomeController;
 use App\Http\Controllers\Front\ServiceOrderController;
-use App\Http\Controllers\Front\NewsRoomController as FrontNewsRoomController;
-use App\Http\Controllers\Front\ContactController as FrontContactController;
-use App\Http\Controllers\Auth\Member\RegisterController as MemberRegisterController;
-use App\Http\Controllers\Auth\Member\LoginController as MemberLoginController;
-use App\Http\Controllers\Auth\Talent\RegisterController as TalentRegisterController;
-use App\Http\Controllers\Auth\Talent\LoginController as TalentLoginController;
-use App\Http\Controllers\Back\Cms\DeviceRepairController;
-use App\Http\Controllers\Back\Cms\CustomersController;
-use App\Http\Controllers\Back\Cms\StatusController;
-use App\Http\Controllers\Back\Cms\NotaController;
-use App\Http\Controllers\Back\Cms\ReportController;
-use App\Http\Controllers\Member\ProfileController as MemberProfileController;
-use App\Http\Controllers\Member\HistoryBookingController as MemberHistoryBookingController;
-use App\Http\Controllers\Talent\ScheduleController as TalentScheduleController;
+
+use App\Http\Controllers\Back\MasterData\DeviceRepairController;
+use App\Http\Controllers\Back\MasterData\CustomersController;
+use App\Http\Controllers\Back\MasterData\StatusController;
+use App\Http\Controllers\Back\MasterData\NotaController;
+use App\Http\Controllers\Back\MasterData\ReportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,57 +28,13 @@ Route::group(['as' => 'front.'], function () {
     // Service Order Routes
     Route::post('/service-order', [ServiceOrderController::class, 'store'])->name('service-order.store');
 
-    Route::resource('/newsrooms', FrontNewsRoomController::class)->only('index', 'show');
-
-    Route::resource('/contacts', FrontContactController::class)->only('index', 'store');
-
-    Route::resource('/directories', FrontDirectoryController::class)->only('index', 'show', 'store');
-
-    Route::resource('/e-commerce/{talent}/booking', FrontBookingController::class )->only('index', 'store')->middleware('member');
-
-    Route::post('/e-commerce/payment', [FrontPaymentController::class, 'createCharge'])->name('payment.create-charge')->middleware('member');
-});
-
-Route::group(['prefix' => 'talent', 'as' => 'talent.'], function () {
-    Route::group(['as' => 'auth.'], function () {
-        Route::resource('/registers', TalentRegisterController::class)->only('index', 'store');
-
-        Route::get('/logins', [TalentLoginController::class, 'index'])->name('login.index');
-        Route::post('/logins', [TalentLoginController::class, 'login'])->name('login.authentication');
-        Route::post('/logout', [TalentLoginController::class, 'logout'])->name('logout');
-    });
-
-    Route::group(['middleware' => ['talent']], function () {
-        Route::group(['prefix' => 'schedule', 'as' => 'schedule.'], function () {
-            Route::get('/', [TalentScheduleController::class, 'index'])->name('index');
-            Route::get('/{id}', [TalentScheduleController::class, 'show'])->name('show');
-            Route::post('/{id}/data', [TalentScheduleController::class, 'data'])->name('data');
-        }) ;
-    });
-});
-
-Route::group(['prefix' => 'member', 'as' => 'member.'], function () {
-    Route::group(['as' => 'auth.'], function () {
-        Route::resource('/registers', MemberRegisterController::class)->only('index', 'store');
-
-        Route::get('/logins', [MemberLoginController::class, 'index'])->name('login.index');
-        Route::post('/logins', [MemberLoginController::class, 'login'])->name('login.authentication');
-        Route::post('/logout', [MemberLoginController::class, 'logout'])->name('logout');
-    });
-
-    Route::group(['middleware' => ['member']], function () {
-        Route::resource('/profiles', MemberProfileController::class)->only('index', 'update');
-
-        Route::group(['prefix' => 'history-booking', 'as' => 'history_booking.'], function () {
-            Route::get('/', [MemberHistoryBookingController::class, 'index'])->name('index');
-            Route::get('/{booking}/show', [MemberHistoryBookingController::class, 'show'])->name('show');
-            Route::post('/{member}/data', [MemberHistoryBookingController::class, 'data'])->name('data');
-        });
-    });
-
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+    Route::get('/', function () {
+        return redirect()->route('admin.login');
+    });
+    
     Route::controller(LoginController::class)->group(function () {
         Route::get('login', 'index')->name('login');
         Route::post('login', 'authenticate')->name('authenticate');
@@ -95,7 +43,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
     Route::group(['middleware' => ['auth:web']], function () {
 
-        Route::group(['prefix' => 'cms', 'as' => 'cms.'], function () {
+        Route::group(['prefix' => 'MasterData', 'as' => 'MasterData.'], function () {
 
             Route::resource('customers', CustomersController::class)->except('show')->parameters(['customers' => 'customer']);
             Route::group(['prefix' => 'customers', 'as' => 'customers.'], function () {

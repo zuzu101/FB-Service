@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Models\Cms\DeviceRepair;
+use App\Models\MasterData\DeviceRepair;
 use App\Observers\DeviceRepairObserver;
 use Illuminate\Support\ServiceProvider;
 
