@@ -1,0 +1,149 @@
+.footer-total-label {
+    flex-shrink: 0;
+    margin-bottom: 0 !important;
+}
+
+.custom-gutter.row {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.custom-gutter > [class^="col-"], .custom-gutter > [class^=" col-"] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.footer-gutter.row {
+    margin-right: -16px;
+    margin-left: -16px;
+}
+
+.footer-gutter > [class^="col-"], .footer-gutter > [class^=" col-"] {
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.total-form-control {
+    padding: 12px 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    color: var(--primary);
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    height: 135px;
+}
+
+.quantity-form-control {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--primary);
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    text-align: center;
+    height: 135px;
+}
+
+.customer-container {
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    height: 135px;
+    padding: 4px;
+}
+
+.customer-add {
+    background: #28A745;
+    border-radius: 12px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    height: 31px;
+    padding: 0;
+}
+
+.divider {
+    border-color: var(--grey);
+    margin: 12px 0;
+}
+
+.table-container {
+    border: 1px solid var(--grey);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 4px;
+}
+
+.table-container table {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    overflow: hidden;
+}
+
+.table-container thead {
+    background-color: var(--secondary-one);
+}
+
+.table-container th {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: var(--secondary-one) !important;
+}
+
+.table-container td {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--black);
+    border: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.footer-faktur-label {
+    flex-shrink: 0;
+    width: 95px;
+}
+
+.footer-total-input {
+    width: 130px
+}
+
+.footer-discount-input {
+    width: 57px;
+    flex-shrink: 0;
+}
+
+.footer-image-preview {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.dibayar-input {
+    width: 230px;
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .container-fluid {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .footer-total-input {
+        width: 5vw;
+    }
+
+    .dibayar-input {
+        width: 13vw;
+    }
+}

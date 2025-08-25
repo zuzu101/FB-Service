@@ -1,0 +1,264 @@
+:root {
+    --white: #ffffff;
+    --black: #282C2F;
+    --grey: #626262;
+
+    --primary: #0391DF;
+    --secondary-one: #013E5E;
+
+    --accent: #FD6A02;
+}
+
+/* Navbar */
+.navbar {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: var(--secondary-one);
+}
+
+.navbar-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-item {
+    margin-right: 32px;
+}
+
+.navbar-item:last-child {
+    margin-right: 0;
+}
+
+.navbar-link {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.navbar-link:hover {
+    color: vaR(--white);
+}
+
+.navbar-dropdown-link {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--black);
+    padding: 12px 16px;
+    display: block;
+}
+
+.navbar-dropdown-link:hover {
+    text-decoration: none;
+}
+
+.sidedown-container {
+    position: relative;
+    transition: .3s ease;
+}
+
+.sidedown-button::after {
+    content: '\25B6';
+    padding-left: 8px;
+}
+
+.sidedown-container:hover .sidedown-content {
+    display: block;
+}
+
+.sidedown-content {
+    width: 120%;
+    position: absolute;
+    left: 102%;
+    top: 5%;
+    background: var(--white);
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    display: none;
+}
+/* End Navbar */
+
+/* Dashboard CSS */
+.section-container {
+    border-radius: 12px;
+    background-color: #CFEAF9;
+    padding: 16px;
+    display: flex;
+}
+
+.data-master-card {
+    width: fit-content;
+    height: fit-content;
+    padding: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    background-color: var(--white);
+    margin-right: 24px;
+}
+
+.data-master-card:last-child {
+    margin-right: 0;
+}
+
+.item-container {
+    width: 122px;
+    height: 122px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+    border: 2px solid #9DDCFF;
+    border-radius: 12px;
+    transition: .2s ease;
+}
+
+.item-link {
+    margin-right: 16px;
+}
+
+.item-link:last-child {
+    margin-right: 0;
+}
+
+.item-label {
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: var(--black);
+    margin-top: 8px;
+}
+
+.item-link:hover {
+    text-decoration: none;
+}
+
+.item-link:hover .item-container {
+    background-color: #9DDCFF;
+}
+
+.item-link:hover .item-label {
+    color: var(--secondary-one);
+}
+
+/* End Dashboard CSS */
+
+
+/* Override CSS */
+.form-control {
+    border-radius: 12px;
+    border-color: var(--grey);
+    font-family: 'Nunito', sans-serif;
+}
+
+.select2-container--default .select2-selection--multiple,
+.select2-container--default .select2-selection--single {
+    border-radius: 12px;
+    border-color: var(--grey);
+    font-family: 'Nunito', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    font-family: 'Nunito', sans-serif;
+    color: var(--black);
+    font-weight: 400;
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+#modalPage .modal-header{
+    border-color: var(--grey);
+}
+
+.dropdown-menu {
+    min-width: 13rem;
+}
+/* End Override CSS */
+
+/* Utilities */
+
+.modal-divider {
+    margin: 0;
+    border-color: var(--grey);
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    border-radius: 12px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    height: 31px;
+    padding: 0;
+    text-transform: capitalize;
+    transition: .2s ease;
+}
+
+.btn-custom:hover {
+    color: var(--white);
+    filter: brightness(.6);
+}
+
+.btn-custom.green {
+    background-color: #28A745;
+}
+
+.btn-custom.red {
+    background-color: #DC3545;
+}
+
+.btn-custom.blue {
+    background-color: #013E5E;
+}
+
+.btn-custom.accent {
+    background-color: var(--accent);
+}
+/* End Utilities */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Dashboard CSS */
+    .section-container {
+        flex-wrap: wrap;
+    }
+
+    .item-link {
+        margin-bottom: 16px;
+    }
+
+    .data-master-card {
+        margin-bottom: 24px;
+    }
+    /* EndDashboard CSS */
+
+    section.container-fluid,
+    header.container-fluid {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+}

@@ -1,0 +1,58 @@
+/* Font Size */
+
+/* H1 */
+.header1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    line-height: normal;
+}
+
+/* H2 */
+.header2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    line-height: normal;
+}
+
+/* H3 */
+.header3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+}
+
+
+/* P */
+.body1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+}
+
+/* Small */
+.body2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+}
+
+@media (max-width: 767.98px) {
+
+    .header1 {
+        font-size: 22px;
+    }
+
+    .header2 {
+        font-size: 19px;
+    }
+
+    .header3 {
+        font-size: 17px;
+    }
+
+}

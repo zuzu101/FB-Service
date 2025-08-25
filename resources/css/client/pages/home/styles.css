@@ -1,0 +1,392 @@
+/* Hero Section */
+#hero {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-color: #FBFCFD;
+    background-size: cover;
+    color: var(--white);
+    position: relative;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+/* End Hero Section */
+
+
+/* Keunggulan Section */
+#keunggulan {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: var(--neutral);
+}
+
+.keunggulan-item {
+    text-align: left;
+}
+
+.keunggulan-ic-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.keunggulan-item-box {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.keunggulan-item-box img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* End Keunggulan Section */
+
+
+/* Layanan Section */
+#layanan {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--neutral);
+}
+
+#layanan .card {
+    box-shadow: none; 
+    border-radius: 20px;
+    transition: var(--transition);
+    width: 100%;
+    max-width: 310px;
+    margin: 0 auto;
+}
+
+#layanan .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#layanan .card-img-top {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    object-fit: cover;
+}
+
+/* Glide.js Carousel for Layanan */
+.glide-layanan {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.glide__slides {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Styling Arrows */
+.glide-layanan .glide__arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--neutral);
+    border: 1px solid #474444;
+    color: var(--navy);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.glide-layanan .glide__arrow:hover {
+    background-color: var(--grey);
+}
+
+.glide-layanan .glide__arrow--left {
+    left: -25px;
+}
+
+.glide-layanan .glide__arrow--right {
+    right: -25px;
+}
+
+/* Styling Bullets */
+.glide-layanan .glide__bullets {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.glide-layanan .glide__bullet {
+    background-color: #D1D5DB;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.glide-layanan .glide__bullet.glide__bullet--active {
+    background-color: var(--navy);
+}
+/* End Layanan Section */
+
+
+/* Alur Section */
+#alur {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Alur Card */
+#alur .card {
+    border-radius: 15px;
+}
+
+#alur .card-body {
+    padding: 2rem;
+}
+
+/* End Alur Section */
+
+/* Proses Section */
+#proses {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--neutral);
+}
+
+#proses .card {
+    border: none;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+#proses .card .card-body iframe {
+    height: 250px;
+    width: 80%;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+#proses .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#proses .card-title i {
+    color: var(--accent);
+    margin-right: 12px;
+}
+/* End Proses Section */
+
+/* Promo Section */
+#promo {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: var(--neutral);
+}
+
+#promo .card {
+    border: none;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+#promo .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+#promo .card img {
+    width: 100%;
+    height: auto;
+}
+
+#promo .card-body .btn-primary {
+    background-color: var(--accent);
+    font-family: var(--font-2);
+    color: var(--white);
+    transition: var(--transition);
+    font-size: 16px;
+    padding: 12px 24px;
+}
+
+#promo .card-body .d-grid {
+     margin-top: 1.5rem;
+}
+/* End Promo Section */
+
+/* Testimoni */
+#testimoni {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#testimoni .card{
+    border-radius: 15px;
+    transition: var(--transition);
+    width: 100%;
+    max-width: 330px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#testimoni .card-img-top {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    object-fit: cover;
+}
+
+.glide-testimoni {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.glide-testimoni .glide__arrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #FBFCFD;
+    color: var(--neutral);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.glide-testimoni .glide__arrow:hover {
+    background-color: var(--accent);
+}
+
+.glide-testimoni .glide__arrow--left {
+    left: -25px;
+}
+
+.glide-testimoni .glide__arrow--right {
+    right: -25px;
+}
+
+.glide-testimoni .glide__bullets {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.glide-testimoni .glide__bullet {
+    background-color: #D1D5DB;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.glide-testimoni .glide__bullet.glide__bullet--active {
+    background-color: var(--neutral);
+}
+/* End Testimoni */
+
+
+/* Tentang Kami Section */
+#tentang-kami {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--neutral);
+}
+
+.tim-img {
+    border-radius: var(--border-radius);
+}
+/* End Tentang Kami Section */
+
+
+/* Kontak Section */
+#kontak {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--neutral);
+}
+
+#kontak iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: var(--border-radius);
+}
+
+#kontak .card {
+    border-radius: 15px;
+}
+
+/* End Kontak Section */
+
+/* CTA Penutup */
+#cta-penutup {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: var(--neutral);
+}
+
+#cta-penutup .btn-primary {
+    background-color: var(--neutral);
+    color: var(--accent);
+    font-family: var(--font-2);
+    transition: var(--transition);;
+    font-size: 16px;
+    padding: 12px 60px;
+    font-weight: 600;
+    position: relative;
+}
+/* End CTA Penutup */
+
+
+/* Animation */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-left {
+    /* Menjalankan animasi slideInFromLeft selama 1 detik */
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.animate-right {
+    /* Menjalankan animasi slideInFromRight selama 1 detik */
+    animation: slideInFromRight 1s ease-out forwards;
+}
+/* End Animation */

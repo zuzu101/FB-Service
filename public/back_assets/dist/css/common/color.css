@@ -1,0 +1,49 @@
+/* Text Color */
+.color-primary {
+    color: var(--primary);
+}
+
+.color-secondary-one {
+    color: var(--secondary-one);
+}
+
+.color-accent {
+    color: var(--accent);
+}
+
+.color-black {
+    color: var(--black);
+}
+
+.color-grey {
+    color: var(--grey);
+}
+
+.color-white {
+    color: var(--white);
+}
+
+/* Background Color */
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary-one {
+    background-color: var(--secondary-one);
+}
+
+.bg-accent {
+    background-color: var(--accent);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-grey {
+    background-color: var(--grey);
+}
+
+.bg-white {
+    background-color: var(--white);
+}

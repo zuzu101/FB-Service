@@ -1,0 +1,130 @@
+/* Updated color palette for a tech/service look */
+:root {
+    --primary: #2A363B;
+    --accent: #007BFF;
+    --neutral: #FBFCFD;
+    --text: #333333;
+    --grey: #5A5A5A;
+    --white: #ffffff;
+    --success: #28a745;
+    --navy: #0B2242;
+
+    --font-1: "Poppins", sans-serif;
+    --font-2: "Inter", sans-serif;
+
+    --transition: all 300ms ease;
+    --border-radius: 12px;
+}
+
+/* Utils */
+html, body {
+  overflow-x: hidden;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.radius-lg {
+    border-radius: var(--border-radius);
+}
+
+/* Updated Button Styles */
+.btn-primary {
+    background-color: var(--accent);
+    font-family: var(--font-2);
+    font-weight: 400;
+    color: var(--white);
+    transition: var(--transition);
+    font-size: 18px;
+    border-color: var(--accent);
+    padding: 8px 16px;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent);
+    color: var(--white);
+    filter: brightness(70%);
+}
+
+.btn-secondary {
+    background-color: var(--success);
+    font-family: var(--font-2);
+    font-weight: 300;
+    color: var(--white);
+    transition: var(--transition);
+    font-size: 18px;
+    border-color: var(--success);
+    padding: 12px 24px;
+    border-radius: 50px;
+}
+
+.btn-secondary:hover {
+    background-color: var(--success);
+    color: var(--white);
+    filter: brightness(70%);
+}
+
+
+/* Navbar */
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+.navbar .logo {
+    width: 50px;
+    height: 33.33px;
+    margin-right: 16px;
+}
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--navy);
+    font-family: var(--font-1);
+}
+
+.navbar .nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--navy);
+    font-family: var(--font-2);
+}
+
+.navbar .nav-link:hover {
+    color: var(--accent);
+}
+
+.navbar .btn {
+    font-size: 14px;
+    padding: 8px 20px;
+}
+/* End Navbar */
+
+
+/* Footer */
+footer {
+    background-color: var(--navy);
+}
+
+.footer-copyright {
+    background-color: var(--navy);
+    filter: brightness(70%);
+    padding: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    font-family: var(--font-2);
+    color: var(--neutral);
+}
+/* End Footer */
