@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-center text-center text-lg-start">
                 
-                <section class="col-lg-7 animate-left">
+                <section class="col-lg-7 animate-on-scroll fade-in-left">
                     <h1 class="header-1 color-navy fw-bold mb-0">Service Laptop</h1>
                     <h1 class="header-1 color-accent fw-bold mb-4">Cepat, Jujur, dan Bergaransi</h1>
                     <img src="{{ asset('images\HeroImage.png') }}" class="img-fluid d-lg-none hero-img" alt="Teknisi sedang bekerja">
@@ -13,7 +13,7 @@
                     </a>
                 </section>
 
-                <section class="col-lg-5 d-none d-lg-block animate-right">
+                <section class="col-lg-5 d-none d-lg-block animate-on-scroll fade-in-right">
                     <img src="{{ asset('images\HeroImage.png') }}" class="img-fluid mb-32 mx-auto d-block hero-img" alt="Teknisi sedang bekerja">
                 </section>
 
@@ -25,8 +25,8 @@
         <div class="container">
             <h2 class="header-2 color-navy fw-bold mb-5 text-center">Kenapa Memilih Kami?</h2>
             <div class="row gy-4">
-                <div class="col-md-3 col-6">
-                    <div class="keunggulan-item-box animate-left">
+                <div class="col-6 col-md-6 col-lg-3">
+                    <div class="keunggulan-item-box animate-on-scroll fade-in-up">
                         <div class="keunggulan-ic-container flex-shrink-0 me-2 ">
                             <img src="{{ asset('images/garansi.png') }}" class="img-fluid" alt="garansi">
                         </div> 
@@ -37,8 +37,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-6">
-                    <div class="keunggulan-item-box animate-left">
+                <div class="col-6 col-md-6 col-lg-3">
+                    <div class="keunggulan-item-box animate-on-scroll fade-in-up delay-1">
                         <div class="keunggulan-ic-container flex-shrink-0 me-2 ">
                             <img src="{{ asset('images/teknisi.png') }}" class="img-fluid" alt="teknisi">
                         </div>
@@ -49,8 +49,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-6">
-                    <div class="keunggulan-item-box animate-right">
+                <div class="col-6 col-md-6 col-lg-3">
+                    <div class="keunggulan-item-box animate-on-scroll fade-in-up delay-2">
                         <div class="keunggulan-ic-container flex-shrink-0 me-2">
                             <img src="{{ asset('images/gear.png') }}" class="img-fluid" alt="sparepart">
                         </div>
@@ -61,8 +61,8 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-6">
-                    <div class="keunggulan-item-box animate-right">
+                <div class="col-6 col-md-6 col-lg-3">
+                    <div class="keunggulan-item-box animate-on-scroll fade-in-up delay-3">
                         <div class="keunggulan-ic-container flex-shrink-0 me-2">
                             <img src="{{ asset('images/konsul.png') }}" class="img-fluid" alt="konsultasi">
                         </div>
@@ -78,10 +78,10 @@
 
     <section id="layanan">
         <div class="container">
-            <h2 class="header-2 color-navy fw-bold mb-2 text-center">Semua Kebutuhan Service dalam Satu Tempat</h2>
-            <p class="body-1 color-navy fw-normal mb-5 text-center">Solusi lengkap untuk semua masalah perangkat elektronik Anda</p>
+            <h2 class="header-2 color-navy fw-bold mb-2 text-center animate-on-scroll fade-in-up">Semua Kebutuhan Service dalam Satu Tempat</h2>
+            <p class="body-1 color-navy fw-normal mb-5 text-center animate-on-scroll fade-in-up delay-1">Solusi lengkap untuk semua masalah perangkat elektronik Anda</p>
 
-            <div class="glide-layanan">
+            <div class="glide-layanan animate-on-scroll fade-in-up delay-2">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
                         <li class="glide__slide">
@@ -144,7 +144,7 @@
  
     <section id="alur" style="background-image: url('{{ asset('images/BGalur.png') }}');">
         <div class="container">
-            <div class="row gx-4 gy-4"> 
+            <div class="row gx-4 gy-4 animate-on-scroll fade-in-left"> 
                 <div class="col-lg-4">
                     <h2 class="header-2 color-neutral fw-bold mb-3">3 Langkah Mudah Layanan Kami</h2>
                     <p class="body-1 color-neutral fw-normal">Ikuti alur sederhana kami untuk mendapatkan layanan perbaikan yang cepat dan efisien.</p>
@@ -153,7 +153,7 @@
                 <div class="col-lg-8">
                     <div class="row aligm-items-start gx-4 gy-4">
 
-                        <div class="col-md-4 mb-3 ">
+                        <div class="col-md-4 mb-3 animate-on-scroll fade-in-up">
                             <div class="card border-0 text-center h-100">
                                 <div class="card-body p-4">
                                     <div class="justify-content-center d-flex mb-2">
@@ -165,7 +165,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-4 mb-3 animate-on-scroll fade-in-up delay-1">
                             <div class="card border-0 text-center h-100">
                                 <div class="card-body p-4">
                                     <div class="justify-content-center d-flex mb-2">
@@ -177,7 +177,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 mb-3">
+                        <div class="col-md-4 mb-3 animate-on-scroll fade-in-up delay-2">
                             <div class="card border-0 text-center h-100">
                                 <div class="card-body p-4">
                                     <div class="justify-content-center d-flex mb-2">
@@ -197,7 +197,7 @@
     <section id="proses">
         <div class="container">
             <div class="row gx-4 gy-4 justify-content-center">
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 animate-on-scroll fade-in-left">
                     <div class="card h-100 shadow">
                         <div class="card-body">
                             <h4 class="card-title header-4 color-navy fw-semibold mb-4 text-center">Lihat Proses Pengerjaan Teknisi Kami</h4>
@@ -209,7 +209,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 animate-on-scroll fade-in-right">
                     <div class="card h-100 shadow">
                         <div class="card-body">
                             <h4 class="card-title header-4 color-navy fw-semibold mb-4 text-center">Lihat Proses Pengerjaan Teknisi Kami</h4>
@@ -271,9 +271,9 @@
 
     <section id="testimoni"style="background-image: url('{{ asset('images/BGtesti.png') }}'); ">
         <div class="container">
-            <h2 class="header-2 color-neutral fw-bold mb-5 text-center">Apa Kata Pelanggan Kami?</h2>
+            <h2 class="header-2 color-neutral fw-bold mb-5 text-center animate-on-scroll fade-in-up">Apa Kata Pelanggan Kami?</h2>
 
-            <div class="glide-testimoni">
+            <div class="glide-testimoni animate-on-scroll fade-in-up delay-1">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
                         <li class="glide__slide">
@@ -327,10 +327,10 @@
     <section id="tentang-kami">
         <div class="container">
             <div class="row align-items-center gy-4">
-                <div class="col-lg-6 d-none d-lg-block">
+                <div class="col-lg-6 d-none d-lg-block animate-on-scroll fade-in-left">
                     <img src="{{ asset('images\aboutUS.png') }}" class="img-fluid tim-img" alt="Tim Teknisi">
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 animate-on-scroll fade-in-right">
                     <h2 class="header-2 color-navy fw-bold mb-3">Tentang Kami</h2>
                     <img src="{{ asset('images\aboutUS.png') }}" class="img-fluid d-lg-none tim-img mb-3" alt="Teknisi sedang bekerja">
                     <p class="body-1 color-navy">Kami adalah tim teknisi laptop profesional yang berdedikasi untuk memberikan layanan terbaik sejak 2010. Dengan pengalaman bertahun-tahun dan ribuan laptop yang telah kami tangani, kami mengutamakan kejujuran, transparansi, dan kualitas.</p>
@@ -361,7 +361,7 @@
             <h2 class="header-2 color-navy fw-bold mb-1 text-center">Hubungi Kami</h2>
             <p class="body-1 color-navy fw-normal mb-5 text-center">Hubungi kami untuk pemesanan layanan service atau kunjungi workshop kami untuk perbaikan langsung</p>
             <div class="row gy-5 justify-content-center">
-                <div class="col-lg-5 ">
+                <div class="col-lg-5 animate-on-scroll fade-in-left">
                     <div class="card h-100">
                         <div class="card-body">
                             <h3 class="header-4 color-navy fw-semibold mb-5">Formulir Pemesanan Service</h3>
@@ -403,6 +403,12 @@
                                         <option value="Alienware">Alienware</option>
                                         <option value="Lainnya">Lainnya</option>
                                     </select>
+                                    <small class="form-text" style="color: #9ca3af; font-size: 0.8rem;">
+                                        Merk perangkat Anda tidak ada dalam daftar? 
+                                        <a href="https://api.whatsapp.com/send/?phone=6287823330830&text=Halo,%20merk%20laptop%20saya%20tidak%20ada%20dalam%20daftar.%20Apakah%20masih%20bisa%20diservice?" target="_blank" class="text-decoration-none" style="color: #16a085;">
+                                            <i class="fab fa-whatsapp me-1"></i>Hubungi kami via WhatsApp
+                                        </a>
+                                    </small>
                                     <div class="invalid-feedback" id="error-brand"></div>
                                 </div>
                                 <div class="body-1 color-navy mb-3">
@@ -413,13 +419,13 @@
                                 <div class="body-1 color-navy mb-3">
                                     <label for="serial_number" class="form-label">Nomor Seri Perangkat <span class="text-danger">*</span></label>
                                     <input type="text" name="serial_number" class="form-control" id="serial_number" required placeholder="Contoh: SN1234567890">
-                                    <small class="form-text text-muted">Biasanya terdapat di bagian bawah laptop atau dalam menu About This PC/Mac</small>
+                                    <small class="form-text" style="color: #9ca3af; font-size: 0.8rem;">Biasanya terdapat di bagian bawah laptop atau dalam menu About This PC/Mac</small>
                                     <div class="invalid-feedback" id="error-serial_number"></div>
                                 </div>
                                 <div class="body-1 color-navy mb-3">
                                     <label for="reported_issue" class="form-label">Keluhan / Kerusakan <span class="text-danger">*</span></label>
                                     <textarea name="reported_issue" class="form-control" id="reported_issue" rows="3" required placeholder="Contoh: Laptop tiba-tiba mati total saat digunakan"></textarea>
-                                    <small class="form-text text-muted">Jelaskan sedetail mungkin masalah yang dialami</small>
+                                    <small class="form-text" style="color: #9ca3af; font-size: 0.8rem;">Jelaskan sedetail mungkin masalah yang dialami</small>
                                     <div class="invalid-feedback" id="error-reported_issue"></div>
                                 </div>
                                 <div class="d-grid">
@@ -432,7 +438,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-5">
+                <div class="col-lg-5 animate-on-scroll fade-in-right">
                     <h3 class="header-4 color-navy fw-semibold mb-4">Informasi Kontak</h3>
                     <div class="d-flex mb-3">
                         <i class="fab fa-whatsapp fa-2x color-accent me-2"></i>
@@ -464,6 +470,7 @@
     </section>
     
     @push('css')
+        @vite(['resources/css/client/pages/home/styles.css'])
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
     @endpush
 
@@ -497,6 +504,19 @@
                     }
                 }).mount();
             });
+            // Animasi On-Scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                threshold: 0.1 
+            });
+
+            const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+            elementsToAnimate.forEach((el) => observer.observe(el));
 
             // Service Order Form Handler
             const serviceOrderForm = document.getElementById('service-order-form');

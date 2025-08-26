@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Front\ServiceOrderRequest;
-use App\Models\Cms\Customers;
-use App\Models\Cms\DeviceRepair;
+use App\Models\MasterData\Customers;
+use App\Models\MasterData\DeviceRepair;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 

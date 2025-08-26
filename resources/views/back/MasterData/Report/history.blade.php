@@ -276,28 +276,6 @@ $(function() {
     // Initialize summary on page load
     updateSummary();
 
-    // Export buttons
-    $('#export-pdf').click(function() {
-        let params = new URLSearchParams({
-            type: 'history',
-            status: $('#status-filter').val(),
-            brand: $('#brand-filter').val(),
-            date_from: $('#date-from').val(),
-            date_to: $('#date-to').val()
-        });
-        window.open("{{ route('admin.MasterData.Report.export.pdf') }}?" + params.toString(), '_blank');
-    });
-
-    $('#export-excel').click(function() {
-        let params = new URLSearchParams({
-            type: 'history',
-            status: $('#status-filter').val(),
-            brand: $('#brand-filter').val(),
-            date_from: $('#date-from').val(),
-            date_to: $('#date-to').val()
-        });
-        window.open("{{ route('admin.MasterData.Report.export.excel') }}?" + params.toString(), '_blank');
-    });
 });
 </script>
 @endpush

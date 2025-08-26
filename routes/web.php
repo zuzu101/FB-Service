@@ -3,7 +3,6 @@
 use App\Http\Controllers\Auth\Admin\LoginController;
 use App\Http\Controllers\Front\HomeController as FrontHomeController;
 use App\Http\Controllers\Front\ServiceOrderController;
-
 use App\Http\Controllers\Back\MasterData\DeviceRepairController;
 use App\Http\Controllers\Back\MasterData\CustomersController;
 use App\Http\Controllers\Back\MasterData\StatusController;
@@ -94,8 +93,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
                 Route::get('export/pdf', [ReportController::class, 'exportPdf'])->name('export.pdf');
                 Route::get('export/excel', [ReportController::class, 'exportExcel'])->name('export.excel');
             });
-
-            
 
         });
 

@@ -74,15 +74,6 @@ class DeviceRepairService
                 case 'Perangkat Baru Masuk':
                     $statusClass = 'badge bg-secondary';
                     break;
-                case 'Menunggu Spare Part':
-                    $statusClass = 'badge bg-secondary';
-                    break;
-                case 'Siap Diambil':
-                    $statusClass = 'badge bg-primary';
-                    break;
-                case 'Sudah Diambil':
-                    $statusClass = 'badge bg-dark';
-                    break;
                 default:
                     $statusClass = 'badge bg-secondary';
             }

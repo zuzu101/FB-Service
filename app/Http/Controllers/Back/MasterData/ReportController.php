@@ -61,14 +61,6 @@ class ReportController extends Controller
     }
 
     /**
-     * Issue type report
-     */
-    public function issue()
-    {
-        return view('back.MasterData.Report.issue');
-    }
-
-    /**
      * Transaction history report
      */
     public function history()
@@ -135,27 +127,5 @@ class ReportController extends Controller
     public function historySummary(Request $request)
     {
         return response()->json($this->reportService->getTransactionHistorySummary($request));
-    }
-
-    /**
-     * Export report to PDF
-     */
-    public function exportPdf(Request $request)
-    {
-        $type = $request->get('type'); // daily, weekly, monthly, brand, issue
-        $date = $request->get('date');
-        
-        return $this->reportService->exportToPdf($type, $date);
-    }
-
-    /**
-     * Export report to Excel
-     */
-    public function exportExcel(Request $request)
-    {
-        $type = $request->get('type'); // daily, weekly, monthly, brand, issue
-        $date = $request->get('date');
-        
-        return $this->reportService->exportToExcel($type, $date);
     }
 }
